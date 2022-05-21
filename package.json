@@ -8,6 +8,7 @@
     "weixin-gongzhonghao": "知码前端"
   },
   "scripts": {
+    "test": "npm run dev",
     "dev": "vite --host",
     "staging": "vite build  --mode staging",
     "build": "vite build",
