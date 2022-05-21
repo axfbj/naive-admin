@@ -27,7 +27,7 @@ interface Setting {
 const setting = Object.assign(
   {
     theme: 'light',
-    sideTheme: 'dark',
+    sideTheme: 'white',
     themeColor: 'blue@#409eff',
     layoutMode: 'ltr',
     sideBarCheckedEffect: 'clear',
@@ -49,8 +49,9 @@ const setting = Object.assign(
   settingInfo
 ) as Setting
 
-const date = new Date()
-const currentHours = date.getHours()
-setting.theme = currentHours > 18 || currentHours < 6 ? 'dark' : 'light'
+// const date = new Date()
+// const currentHours = date.getHours()
+// setting.theme = currentHours > 18 || currentHours < 6 ? 'dark' : 'light'
+setting.theme = 'light'
 
 export default setting
